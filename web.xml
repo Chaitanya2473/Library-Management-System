@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0" >
+  <display-name>LMS</display-name>
+  <welcome-file-list>
+    <welcome-file>view/pages/login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+      <servlet-class>com.controller.userM.LoginUserController</servlet-class>
+      <servlet-name> login</servlet-name>
+  </servlet>
+  <!-- frondend -->
+    <servlet-mapping>
+       <url-pattern>/login</url-pattern>
+       <servlet-name>login</servlet-name>
+    </servlet-mapping>
+    <servlet>
+      <servlet-class>com.controller.userM.OpenRegistrationController</servlet-class>
+      <servlet-name>openregistration</servlet-name>
+  </servlet>
+  <!-- frondend -->
+    <servlet-mapping>
+       <url-pattern>/openregistration</url-pattern>
+       <servlet-name>openregistration</servlet-name>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-class>com.controller.userM.AddUserController</servlet-class>
+        <servlet-name>register </servlet-name>
+  </servlet>
+  <!-- frondend -->
+    <servlet-mapping>
+       <url-pattern>/register</url-pattern>
+       <servlet-name>register</servlet-name>
+    </servlet-mapping>
+    <servlet>
+        <servlet-class>com.controller.userM.FetchUserController</servlet-class>
+        <servlet-name>usermanager </servlet-name>
+  </servlet>
+  <!-- frondend -->
+    <servlet-mapping>
+       <url-pattern>/usermanager</url-pattern>
+       <servlet-name>usermanager</servlet-name>
+    </servlet-mapping>
+    
+ <servlet>
+        <servlet-class>com.controller.userM.UserInformationController</servlet-class>
+        <servlet-name>userinformation </servlet-name>
+  </servlet>
+  <!-- frondend -->
+    <servlet-mapping>
+       <url-pattern>/userinformation</url-pattern>
+       <servlet-name>userinformation</servlet-name>
+    </servlet-mapping> 
+    
+    
+     <servlet>
+        <servlet-class>com.controller.userM.UpdateUserController</servlet-class>
+        <servlet-name>UpdateUser </servlet-name>
+  </servlet>
+  <!-- frondend -->
+    <servlet-mapping>
+       <url-pattern>/UpdateUser</url-pattern>
+       <servlet-name>UpdateUser</servlet-name>
+    </servlet-mapping>    
+    
+     <servlet>
+        <servlet-class>com.controller.userM.LogoutController</servlet-class>
+        <servlet-name>logout </servlet-name>
+  </servlet>
+  <!-- frondend -->
+    <servlet-mapping>
+       <url-pattern>/logout</url-pattern>
+       <servlet-name>logout</servlet-name>
+    </servlet-mapping>  
+      
+    <servlet>
+        <servlet-class>com.controller.userM.DeleteController</servlet-class>
+        <servlet-name>deleteinformation </servlet-name>
+  </servlet>
+  <!-- frondend -->
+    <servlet-mapping>
+       <url-pattern>/deleteinformation</url-pattern>
+       <servlet-name>deleteinformation</servlet-name>
+    </servlet-mapping> 
+</web-app>
